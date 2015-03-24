@@ -16,6 +16,15 @@
       </div>
     </nav>
 
+    <aside class="site-social">
+      <h1>NOTICIAS</h1>
+      <p>
+        {% for social in site.data.social %}
+        <a href="{{social.url}}" class="icon-{{social.icon}}"></a>
+        {% endfor %}
+      </p>
+    </aside>
+
   </div>
 
 </header>

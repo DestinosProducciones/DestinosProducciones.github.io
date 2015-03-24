@@ -7,9 +7,9 @@
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
-    background-color: #0087B4;
+    background-color: $nav-bgcolor;
     font-family: 'Ropa Sans', sans-serif;
-    color: white;
+    color: $nav-color;
 }
 .wrapper-sticky {
     display: flex;
@@ -42,14 +42,16 @@
     flex-flow: row nowrap;
     align-items: center;
     margin-left: 1em;
+    flex: 0.8;
+    color: $nav-color;
     .menu-icon {
         display: none;
     }
     .page-link {
-        color: white;
         line-height: $base-line-height;
         font-size: 1.25em;
         margin-left: 1em;
+        color: $nav-color;
     }    
 }
 
@@ -59,17 +61,55 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    background-color: #0087B4;
+    background-color: $nav-bgcolor;
     font-family: 'Ropa Sans', sans-serif;
-    color: white;
+    color: $nav-color;
 }
 .footer {
     justify-content: space-between;
     align-items: center;
     > a:first-child {
         flex: 1;
-        color: white;
+        color: $nav-color;
         text-decoration: none;
+    }
+}
+
+/**
+ * Site social
+ */
+.site-social {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    background-color: $social-bgcolor;
+    padding-right: 1em;
+    padding-left: 1em;
+    height: 5em;
+    margin-bottom: 0px;
+    box-shadow: -1px 3px 6px 5px rgba(0, 0, 0, 0.75);
+    > h1 {
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        font-size: 1.25em;
+        width: 100%;
+        text-align: center;
+    }
+    > p {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        > a {
+            font-size: 1.5em;
+            color: $nav-color;
+            margin-right: 0.5em;
+            &:hover {
+                color: black;
+            }
+        }
+        > a:last-child {
+            margin-right: 0;        
+        }
     }
 }
 
@@ -98,8 +138,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
