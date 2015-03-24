@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ropa+Sans);
+@import url(http://fonts.googleapis.com/css?family=Courgette|Oxygen|Ropa+Sans);
 .row {
   display: flex;
   flex-flow: row nowrap; }
@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Oxygen, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -491,6 +491,9 @@ blockquote {
 .vignettes {
   display: flex;
   flex-flow: row nowrap; }
+  @media screen and (max-width: 600px) {
+    .vignettes {
+      flex-flow: column nowrap; } }
 
 .placeholder {
   width: 25%;
@@ -499,9 +502,50 @@ blockquote {
   padding-top: 1em;
   padding-bottom: 1em;
   align-items: center; }
+  @media screen and (max-width: 600px) {
+    .placeholder {
+      width: 80%;
+      margin: auto; } }
   .placeholder > article {
     padding: 1em; }
     .placeholder > article > h2 {
-      text-align: center; }
+      text-align: center;
+      font-family: "Courgette", cursive; }
     .placeholder > article > p {
       text-align: justify; }
+
+.header-aprender {
+  color: #669900; }
+
+.header-avanzar {
+  color: #CC6600; }
+
+.header-disfrutar {
+  color: #0087B4; }
+
+.header-pasion {
+  color: #CC3333; }
+
+.article-aprender,
+.article-pasion {
+  order: 1; }
+
+.article-avanzar,
+.article-disfrutar {
+  order: 2; }
+  @media screen and (max-width: 600px) {
+    .article-avanzar,
+    .article-disfrutar {
+      order: 1; } }
+
+.Imag_Aprender,
+.Imag_Pasion {
+  order: 2; }
+  @media screen and (max-width: 600px) {
+    .Imag_Aprender,
+    .Imag_Pasion {
+      order: 1; } }
+
+.Imag_Avanzar,
+.Imag_Disfrutar {
+  order: 1; }

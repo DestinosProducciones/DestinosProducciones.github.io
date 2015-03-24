@@ -25,9 +25,16 @@
 .vignettes { 
 	display: flex;
 	flex-flow: row nowrap;
+	@include media-query($on-palm) {
+		flex-flow: column nowrap;
+    }
 }
 .placeholder {
 	width: 25%;
+	@include media-query($on-palm) {
+		width: 80%;
+		margin: auto
+    }
 	display: flex;
 	flex-flow: column nowrap;
 	padding-top: 1em;
@@ -37,9 +44,46 @@
 		padding: 1em;
 		> h2 {
 			text-align:	center;	
+			font-family: $front-special-font;
 		}
 		> p {
 			text-align:	justify; 
 		}
 	}
+}
+
+.header-aprender {
+	color: #669900;
+}
+.header-avanzar {
+	color: #CC6600;
+}
+.header-disfrutar {
+	color: #0087B4;
+}
+.header-pasion {
+	color: #CC3333;
+}
+.article-aprender,
+.article-pasion{
+	order: 1;
+}
+.article-avanzar,
+.article-disfrutar{
+	order: 2;
+	@include media-query($on-palm) {
+		order: 1;
+    }
+}
+
+.Imag_Aprender,
+.Imag_Pasion {
+	order: 2;
+	@include media-query($on-palm) {
+		order: 1;
+    }
+}
+.Imag_Avanzar,
+.Imag_Disfrutar {
+	order: 1;
 }
