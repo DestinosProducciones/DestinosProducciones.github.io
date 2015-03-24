@@ -1,0 +1,35 @@
+
+.site-proyectos {
+	display: flex;
+    flex-flow: row nowrap;
+    @include media-query($on-palm) {
+		flex-flow: column nowrap;
+    }
+}
+.proyectos-article {
+	width: 60%;
+	text-align: justify;	
+	order: 1;
+	@include media-query($on-palm) {
+		width: 90%;
+		margin: auto;
+		order: 2;
+    }
+}
+.proyectos-image {
+	width: 40%;
+	text-align: center;
+	>img {
+		width: 70%;
+	}
+	order: 2;
+	@include media-query($on-palm) {
+		width: 90%;
+		margin: auto;
+		order: 1;
+		>img{
+			width: 100%;
+			margin-bottom: 1em;
+		}
+    }
+}

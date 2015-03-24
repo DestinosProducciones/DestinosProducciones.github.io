@@ -170,7 +170,7 @@ blockquote {
   flex-flow: row nowrap;
   align-items: center;
   margin-left: 1em;
-  flex: 0.8;
+  width: 60%;
   color: white; }
   .site-nav .menu-icon {
     display: none; }
@@ -549,3 +549,35 @@ blockquote {
 .Imag_Avanzar,
 .Imag_Disfrutar {
   order: 1; }
+
+.site-proyectos {
+  display: flex;
+  flex-flow: row nowrap; }
+  @media screen and (max-width: 600px) {
+    .site-proyectos {
+      flex-flow: column nowrap; } }
+
+.proyectos-article {
+  width: 60%;
+  text-align: justify;
+  order: 1; }
+  @media screen and (max-width: 600px) {
+    .proyectos-article {
+      width: 90%;
+      margin: auto;
+      order: 2; } }
+
+.proyectos-image {
+  width: 40%;
+  text-align: center;
+  order: 2; }
+  .proyectos-image > img {
+    width: 70%; }
+  @media screen and (max-width: 600px) {
+    .proyectos-image {
+      width: 90%;
+      margin: auto;
+      order: 1; }
+      .proyectos-image > img {
+        width: 100%;
+        margin-bottom: 1em; } }
