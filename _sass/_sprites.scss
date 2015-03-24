@@ -1,0 +1,44 @@
+.sprite {
+	background: url('/css/sprite.jpg') no-repeat top left; width: 200px; height: 200px;
+	border-radius: 50%;
+}
+.sprite.Imag_Aprender {
+	background-position:-50px 0;
+}
+.sprite.Imag_Avanzar {
+	background-position: -308px 0;
+}
+.sprite.Imag_Disfrutar {
+	background-position: -580px 0;
+}
+.sprite.Imag_Pasion {
+	background-position: -865px 0;
+}
+.home {
+	display: flex;
+	flex-flow: column nowrap;
+}
+.banner {
+	width: 100%;
+}
+.vignettes { 
+	display: flex;
+	flex-flow: row nowrap;
+}
+.placeholder {
+	width: 25%;
+	display: flex;
+	flex-flow: column nowrap;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	align-items: center;
+	> article	{
+		padding: 1em;
+		> h2 {
+			text-align:	center;	
+		}
+		> p {
+			text-align:	justify; 
+		}
+	}
+}
