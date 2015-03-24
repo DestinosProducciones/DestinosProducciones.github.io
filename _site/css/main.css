@@ -21,7 +21,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #111;
-  background-color: #F9F4DB;
+  background-color: #F6F6F6;
   -webkit-text-size-adjust: 100%; }
 
 .body {
@@ -103,7 +103,7 @@ blockquote {
   max-width: calc(1024px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
-  background-color: #F9F4DB;
+  background-color: #F6F6F6;
   box-shadow: 0px 12px 44px -3px rgba(0, 0, 0, 0.75);
   height: 100%; }
   @media screen and (max-width: 800px) {
