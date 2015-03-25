@@ -12,7 +12,7 @@ permalink: /proyectos/
 
 <p>Un drama romántico que explora el poder de la lucha y superación de las personas y que no te dejará indiferente.</p>
 
-<p>Tenemos previsto comenzar el rodaje en primavera. No le pierdas la pista a DESTINOS¡Entérate de todo y sigue el rodaje junto a nosotros en nuestras redes sociales!</p>
+<p>Tenemos previsto comenzar el rodaje en primavera. No le pierdas la pista a DESTINOS ¡Entérate de todo y sigue el rodaje junto a nosotros en nuestras redes sociales!</p>
 </article>
 <aside class = "proyectos-image"><img src="/images/portada_guion.png.jpeg" alt="portada de guión"></aside>
 </main>

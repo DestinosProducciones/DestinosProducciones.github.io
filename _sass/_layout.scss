@@ -53,6 +53,9 @@
         margin-left: 1em;
         color: $nav-color;
     }    
+    @include media-query($on-palm) {
+        flex-flow: column nowrap;
+    }
 }
 
 
