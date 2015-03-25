@@ -54,6 +54,7 @@
         color: $nav-color;
     }    
     @include media-query($on-palm) {
+        width: 35%;
         flex-flow: column nowrap;
     }
 }
@@ -97,6 +98,9 @@
         font-size: 1.25em;
         width: 100%;
         text-align: center;
+        @include media-query($on-palm) {
+            display: none;
+        }
     }
     > p {
         display: flex;
@@ -109,10 +113,31 @@
             &:hover {
                 color: black;
             }
+            @include media-query($on-palm) {
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 1em;
+            }
         }
         > a:last-child {
-            margin-right: 0;        
+            margin-right: 0;    
+            @include media-query($on-palm) {
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 0.4em;
+            }    
         }
+        > a:first-child { 
+            @include media-query($on-palm) {
+                margin-top: 0.25em;
+            }    
+        }
+        @include media-query($on-palm) {
+            flex-flow: column nowrap;
+        }
+    }
+    @include media-query($on-palm) {
+        height: 7em;
     }
 }
 
